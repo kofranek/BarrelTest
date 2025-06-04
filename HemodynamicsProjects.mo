@@ -3,20 +3,20 @@ package BarrelTest
   package Parts
     model HydraulicBarrel
       Bodylight.Types.RealIO.VolumeInput V "volume in barrel" annotation (Placement(
-            transformation(extent={{-198,16},{-158,56}}), iconTransformation(extent
-              ={{-114,46},{-84,76}})));
+            transformation(extent={{-198,16},{-158,56}}), iconTransformation(extent=
+               {{-114,46},{-84,76}})));
       Bodylight.Types.RealIO.PositionInput d "barrel width " annotation (Placement(
-            transformation(extent={{-198,-6},{-158,34}}), iconTransformation(extent
-              ={{-110,-30},{-80,0}})));
+            transformation(extent={{-198,-6},{-158,34}}), iconTransformation(extent=
+               {{-110,-30},{-80,0}})));
       Bodylight.Types.RealIO.PositionOutput h "level height" annotation (Placement(
-            transformation(extent={{-188,54},{-168,74}}), iconTransformation(extent
-              ={{100,60},{124,84}})));
+            transformation(extent={{-188,54},{-168,74}}), iconTransformation(extent=
+               {{100,60},{124,84}})));
       Bodylight.Types.RealIO.PressureOutput P "hydraulic pressure" annotation (
           Placement(transformation(extent={{-188,20},{-168,40}}),
             iconTransformation(extent={{100,20},{124,44}})));
       Types.HydraulicElastanceOutput el "hydraukic elastance" annotation (Placement(
-            transformation(extent={{-188,26},{-168,46}}), iconTransformation(extent
-              ={{100,-20},{120,0}})));
+            transformation(extent={{-188,26},{-168,46}}), iconTransformation(extent=
+               {{100,-20},{120,0}})));
       Bodylight.Types.Area S; //Aurface area of barrel
       parameter Bodylight.Types.Density ro=1060; //blood density in kg/m3=g/l
       parameter Bodylight.Types.Position l=0.1; //base length 10 cm
@@ -40,20 +40,20 @@ package BarrelTest
     model HydraulicBarrelWithHydraulicPort
       Bodylight.Types.RealIO.VolumeInput Vinit "initial volume in barrel"
                                                               annotation (Placement(
-            transformation(extent={{-198,16},{-158,56}}), iconTransformation(extent
-              ={{-114,46},{-84,76}})));
+            transformation(extent={{-198,16},{-158,56}}), iconTransformation(extent=
+               {{-114,46},{-84,76}})));
       Bodylight.Types.RealIO.PositionInput d "barrel width " annotation (Placement(
-            transformation(extent={{-198,-6},{-158,34}}), iconTransformation(extent
-              ={{-110,-30},{-80,0}})));
+            transformation(extent={{-198,-6},{-158,34}}), iconTransformation(extent=
+               {{-110,-30},{-80,0}})));
       Bodylight.Types.RealIO.PositionOutput h "level height" annotation (Placement(
-            transformation(extent={{-188,54},{-168,74}}), iconTransformation(extent
-              ={{100,60},{124,84}})));
+            transformation(extent={{-188,54},{-168,74}}), iconTransformation(extent=
+               {{100,60},{124,84}})));
       Bodylight.Types.RealIO.PressureOutput P "hydraulic pressure" annotation (
           Placement(transformation(extent={{-188,20},{-168,40}}),
             iconTransformation(extent={{100,20},{124,44}})));
       Types.HydraulicElastanceOutput el "hydraukic elastance" annotation (Placement(
-            transformation(extent={{-188,26},{-168,46}}), iconTransformation(extent
-              ={{100,-20},{120,0}})));
+            transformation(extent={{-188,26},{-168,46}}), iconTransformation(extent=
+               {{100,-20},{120,0}})));
       Bodylight.Types.Area S; //Aurface area of barrel
       parameter Bodylight.Types.Density ro=1060; //blood density in kg/m3=g/l
       parameter Bodylight.Types.Position l=0.1; //base length 10 cm
@@ -84,7 +84,7 @@ package BarrelTest
   end Parts;
 
   package Tests
-    model HyraulicBarrelTest
+    model HydraulicBarrelTest
       Parts.HydraulicBarrel hydraulicBarrel
         annotation (Placement(transformation(extent={{-12,10},{18,40}})));
       Bodylight.Types.Constants.VolumeConst volume(k=0.003)
@@ -99,12 +99,12 @@ package BarrelTest
               -22,16},{-22,22.75},{-11.25,22.75}}, color={0,0,127}));
       annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
             coordinateSystem(preserveAspectRatio=false)));
-    end HyraulicBarrelTest;
+    end HydraulicBarrelTest;
 
   end Tests;
 
   package Models
-    model HyraulicBarrel
+    model HydraulicBarrel
       Parts.HydraulicBarrel hydraulicBarrel
         annotation (Placement(transformation(extent={{-12,10},{18,40}})));
       Bodylight.Types.Constants.VolumeConst volume(k=0.003)
@@ -119,7 +119,7 @@ package BarrelTest
               -22,16},{-22,22.75},{-11.25,22.75}}, color={0,0,127}));
       annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
             coordinateSystem(preserveAspectRatio=false)));
-    end HyraulicBarrel;
+    end HydraulicBarrel;
   end Models;
 
   package Types
